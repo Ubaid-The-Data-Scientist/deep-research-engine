@@ -18,6 +18,6 @@ client = AsyncOpenAI(
 )
 
 gemini_client = OpenAIChatCompletionsModel(
-    client=client,
-    model_name=gemini_model
+    model=gemini_model,
+    openai_client=client
 )
